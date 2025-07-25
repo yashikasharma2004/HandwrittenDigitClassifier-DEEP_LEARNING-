@@ -1,0 +1,64 @@
+# Handwritten Digit Classifier - Deep Learning
+
+## 1. Introduction
+
+The **Handwritten Digit Classifier** is a deep learning project aimed at recognizing digits (0–9) from handwritten images using a Convolutional Neural Network (CNN). This project is implemented using Python and TensorFlow/Keras and is trained on the popular **MNIST dataset**, which consists of 70,000 grayscale images of handwritten digits (60,000 for training and 10,000 for testing). The objective is to build an accurate classification model that can automate digit recognition, which has applications in postal mail sorting, bank check processing, and document digitization.
+
+## 2. Dataset
+
+The **MNIST dataset** contains:
+
+* **Training set:** 60,000 images (28x28 pixels each)
+* **Testing set:** 10,000 images
+* Each image represents a handwritten digit between 0 and 9.
+* The dataset is pre-labeled, allowing for supervised learning.
+
+## 3. Methodology
+
+### a) Data Preprocessing
+
+* Normalization of pixel values to the range \[0,1].
+* Reshaping images for compatibility with CNN layers.
+* One-hot encoding of labels.
+
+### b) Model Architecture
+
+The classifier uses a **Convolutional Neural Network (CNN)** with:
+
+* **Convolutional layers**: To extract features from images.
+* **Pooling layers**: For dimensionality reduction.
+* **Dense layers**: For final classification.
+* **Softmax activation**: To predict probabilities for each class (0–9).
+
+### c) Training
+
+* Optimizer: **Adam**
+* Loss function: **Categorical Crossentropy**
+* Metrics: **Accuracy**
+* Epochs: 10–15 with batch size 32
+
+### d) Evaluation
+
+* The trained model was evaluated on the test dataset.
+* Visualization of predictions using sample handwritten digits.
+
+## 4. Results
+
+* **Test Accuracy:** \~98%
+* The model successfully classifies most handwritten digits with high accuracy.
+* Visual outputs include correctly and incorrectly classified examples for further analysis.
+
+## 5. Tools & Technologies
+
+* **Programming Language:** Python
+* **Libraries:** TensorFlow/Keras, NumPy, Matplotlib
+* **Dataset:** MNIST
+
+## 6. Conclusion
+
+This project demonstrates the effectiveness of CNNs in image classification tasks. With minimal preprocessing and a relatively simple architecture, the model achieves high accuracy, proving its applicability for real-world use cases in OCR systems and digit recognition tasks.
+
+---
+
+**Author:** Yashika Sharma
+B.Tech CSE, 2nd Year
